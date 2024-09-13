@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; /* White background */
+    padding: 1rem;
+}
+
+.logo {
+    align-self: flex-start; /* Aligns the logo to the top left */
+    margin-bottom: 1rem; /* Space between logo and navigation */
+}
+
+.logo img {
+    display: block; /* Remove bottom space below images */
+    max-width: 150px; 
+    height: auto; 
+}
+
+/* Navigation styles */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the navigation menu */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0; 
+    margin: 0; 
+}
+
+nav ul li {
+    margin: 0 0.5rem; /* Add space between menu items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #000; /* Black border */
+    background-color: #f8f8f8; /* Light grey background */
+    color: #000; /* Black text */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: Arial, sans-serif; 
+    font-size: 14px; 
+}
+
+nav ul li a:hover {
+    background-color: #000; /* Black background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.contact {
+    padding: 20px;
+}
+
+.contact h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    border: none; 
+}
+
+.contact_container {
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type=submit] {
+    padding: 12px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f8f8f8; /* Light grey background */
+    color: #000; /* Black text */
+    font-size: 14px;
+    align-self: flex-end; /* Align to the end of the form */
+}
+
+input[type=submit]:hover {
+    background-color: #ddd;
+}
+
+/* Footer styles */
+footer {
+    background: #ffffff; /* White background */
+    padding: 1rem;
+    text-align: center;
+    color: #000; /* Black text */
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #0000ff; /* Blue text */
+}
+
+.footer-links a:hover {
+    color: #333; /* Darker black on hover */
+}
