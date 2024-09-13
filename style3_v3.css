@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.logo img:hover {
+    opacity: 0.8;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #D8262F; /* Red border */
+    background-color: #f8f8f8;
+    color: #D8262F; /* Red text */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: Arial, sans-serif; /* Match nav font */
+    font-size: 16px; /* Match nav font size */
+    letter-spacing: 1px; /* Match nav letter-spacing */
+}
+
+nav ul li a:hover {
+    background-color: #D8262F; /* Red background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    font-family: Arial, sans-serif; /* Match nav font */
+    font-size: 16px; /* Match nav font size */
+    letter-spacing: 1px; /* Match nav letter-spacing */
+    color: #D8262F; /* Match nav color */
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #D8262F; /* Red color for burger lines */
+    margin: 3px 0;
+}
+
+.menu-items {
+    display: none;
+    background-color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+.menu-items ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-items ul li {
+    margin-bottom: 10px;
+}
+
+.menu-items ul li a {
+    color: #D8262F;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: Arial, sans-serif; /* Match nav font */
+}
+
+.menu-items ul li a:hover {
+    background-color: #D8262F; /* Red background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .menu-items.active {
+        display: block;
+    }
+}
+
+/* Contact form styles */
+.contact {
+    padding: 20px;
+    background-color: #D8262F;
+    color: #ffffff;
+}
+
+.contact h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.contact_container {
+    border: 1px solid #ffffff;
+    padding: 20px;
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input[type=text], select, textarea {
+    width: calc(100% - 24px);
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 16px;
+    background-color: #f8f8f8;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #000000; /* Black text */
+}
+
+input[type=submit] {
+    padding: 12px 20px;
+    border: 0.5px solid #000000; /* Black border */
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #ffffff;
+    float: right; /* Move submit button to the right */
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.column {
+    width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+    background: #D8262F;
+    padding: 1rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-links a:hover {
+    color: #000000;
+}
+
+footer p {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact_container {
+        padding: 10px;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        box-sizing: border-box;
+        float: none; /* Reset float for small screens */
+    }
+
+    input[type=text], select, textarea {
+        width: calc(100% - 24px);
+    }
+}
