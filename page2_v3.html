@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Hub - Product Page</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <header>
+        <div class="logo-cart">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo_01.png" alt="Cricket Hub Logo">
+                </a>
+            </div>
+            <div class="cart"><img src="images/cart.png" alt="Cart"></div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">Shop Gear</a></li>
+                <li><a href="form.php">Contact</a></li>
+            </ul>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="menu-items" id="menuItems">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">Shop Gear</a></li>
+            <li><a href="form.php">Contact</a></li>
+        </ul>
+    </div>
+    <main>
+        <section class="product-category">
+            <h2>Cricket Gear</h2>
+            
+            <!-- Category: Bats -->
+            <div class="category">
+                <h3>Bats:</h3>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="images/bat_01.png" alt="Bat">
+                        <p>Gray-Nicolls Delta 700 Size 6</p><br>
+                        <p class="price">$89.99</p><br>
+                    </div>
+                    <div class="product">
+                        <img src="images/bat_02.png" alt="Bat">
+                        <p>GM ICON bat Full Size SH, English Willow</p><br>
+                         <p class="price">$149.99</p><br>
+                    </div>
+                    <div class="product">
+                       <img src="images/bat_03.png" alt="Bat">
+                        <p>Gray-Nicolls e41 500 Bat, English Willow Size 4</p><br>
+                        <p class="price">$39.99</p><br>
+                    </div>
+					<div class="product">
+                        <img src="images/bat_04.png" alt="Bat">
+                        <p>Kookaburra Ghost Full size SH, English Willow</p><br>
+                        <p class="price">$99.99</p><br>
+                    </div>
+					<div class="product">
+                        <img src="images/bat_05.png" alt="Bat">
+                        <p>GM Bat English Willow Size SH</p><br>
+                        <p class="price">$149.99</p><br>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Category: Balls -->
+            <div class="category">
+                <h3>Balls:</h3>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="images/ball_01.png" alt="Balls">
+                        <p>MAKO Cricket Ball, 4pc, Leather 156 Grams (Pink)</p><br>
+                        <p class="price">$14.99</p><br>
+                    </div>
+                    <div class="product">
+                        <img src="images/ball_02.png" alt="Balls">
+                        <p>3 Pack Of Cricket Balls (Red)</p><br>
+                        <p class="price">$19.99</p><br>
+                    </div>
+                    <div class="product">
+                        <img src="images/ball_03.png" alt="Balls">
+                        <p>4 Pack Of Cricket Balls (Red)</p><br>
+                        <p class="price">$39.99</p><br>
+                    </div>
+					 <div class="product">
+                        <img src="images/ball_05.png" alt="Balls">
+                        <p>MAKO Cricket Ball, 4pc, Leather 156 Grams (White)</p><br>
+                        <p class="price">$14.99</p><br>
+                    </div>
+					 <div class="product">
+                        <img src="images/ball_06.png" alt="Balls">
+                        <p>SB Cricket Ball, 4pc, Leather 156 Grams (White)</p><br>
+                        <p class="price">$9.99</p><br>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Category: Apparel -->
+            <div class="category">
+                <h3>Apparel:</h3>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="images/vest_01.png" alt="Apparel">
+                        <p>Gray-Nicolls White Cricket Jersey Size 16</p><br>
+                        <p class="price">$24.99</p><br>
+                    </div>
+                    <div class="product">
+                        <img src="images/vest_02.png" alt="Apparel">
+                        <p>Vintage Tommy Hilfiger Pure Cotton Knit Cricket Jersey Sweater Size XXL</p><br>
+                        <p class="price">$39.99</p><br>
+                    </div>
+                    <div class="product">
+                        <img src="images/shirt_01.png" alt="Apparel">
+                        <p>Gray-Nicolls Cricket Shirt Size Large</p><br>
+                        <p class="price">$14.99</p><br>
+                    </div>
+					 <div class="product">
+                        <img src="images/shirt_02.png" alt="Apparel">
+                        <p>White Cricket Shirt, Long Sleeve, Size 12</p><br>
+                        <p class="price">$14.99</p><br>
+                    </div>
+					 <div class="product">
+                        <img src="images/pants_01.png" alt="Apparel">
+                        <p>White Pants Gray-Nicholl Size 14</p><br>
+                        <p class="price">$14.99</p><br>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Category: Protective Gear -->
+            <div class="category">
+                <h3>Protective Gear:</h3>
+                <div class="product-grid">
+                    <div class="product">
+						<img src="images/helmet_01.png" alt="Protective Gear">
+                        <p>Cricket Helmet C16 Albion, Junior, Black</p><br>
+                        <p class="price">$19.99</p><br>
+                    </div>
+                    <div class="product">
+						<img src="images/pads_01.png" alt="Protective Gear">
+                        <p>GM Kids Cricket Pads</p><br>
+                        <p class="price">$14.99</p><br>
+                    </div>
+                    <div class="product">
+                        <img src="images/pads_02.png" alt="Protective Gear">
+                        <p>Kookaburra Cricket Pads</p><br>
+                        <p class="price">$24.99</p><br>
+                    </div>
+					<div class="product">
+                        <img src="images/gloves_01.png" alt="Protective Gear">
+                        <p>Gray-Nicholls Cricket Gloves Size Youth</p><br>
+                        <p class="price">$14.99</p><br>
+                    </div>
+					<div class="product">
+                        <img src="images/gloves_02.png" alt="Protective Gear">
+                        <p>Sunridges Adult Cricket Gloves Size Adult</p><br>
+                        <p class="price">$19.99</p><br>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Category: Footwear -->
+            <div class="category">
+                <h3>Footwear:</h3>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="images/shoes_01.png" alt="Footwear">
+                        <p>Asics Gel Peake 3 Mens Cricket Shoes Size US 11.5</p><br>
+                        <p class="price">$39.99</p><br>
+                    </div>
+                    <div class="product">
+                        <img src="images/shoes_02.png" alt="Footwear">
+                        <p>Gray Nicolls Mens Cricket Shoes Spike Size US 5</p><br>
+                        <p class="price">$34.99</p><br>
+                    </div>
+                    <div class="product">
+                        <img src="images/shoes_03.png" alt="Footwear">
+                        <p>Kookaburra Cricket Shoes Size US 5</p><br>
+                        <p class="price">$29.99</p><br>
+                    </div>
+					<div class="product">
+                        <img src="images/shoes_04.png" alt="Footwear">
+                        <p>Kookaburra Cricket Shoes Size US 9</p><br>
+                        <p class="price">$39.99</p><br>
+                    </div>
+					<div class="product">
+                        <img src="images/shoes_06.png" alt="Footwear">
+						<p>Payntr Cricket Shoes Size US 8</p><br>
+                        <p class="price">$19.99</p><br>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Category: Accessories -->
+            <div class="category">
+                <h3>Accessories:</h3>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="images/bag_04.png" alt="Accessories">
+                        <p>Kookaburra Pro 600 Wheelie Cricket Kit Bag</p><br>
+                        <p class="price">$19.99</p><br>
+                    </div>
+                    <div class="product">
+                        <img src="images/bag_02.png" alt="Accessories">
+                        <p>GM Cricket Original Limited Edition Duplex Wheelie Bag</p><br>
+                        <p class="price">$49.99</p><br>
+                    </div>
+                    <div class="product">
+                        <img src="images/bag_03.png" alt="Accessories">
+                        <p>Gray-Nicolls Kaboom Cricket Bag</p><br>
+                        <p class="price">$29.99</p><br>
+                    </div>
+					<div class="product">
+                        <img src="images/stumps_02.png" alt="Accessories">
+                        <p>Gray-Nicolls Spring Stumps</p><br>
+                        <p class="price">$14.99</p><br>
+                    </div>
+					<div class="product">
+                        <img src="images/stumps_01.png" alt="Accessories">
+                        <p>Gray-Nicholls Metal Stumps</p><br>
+                        <p class="price">$14.99</p><br>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="form.php">Contact Us</a>
+            <a href="#">Shipping</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+        </div>
+        <p>All prices are in NZD and include GST. Copyright © 2024 Jake Rutherford. All Rights Reserved.</p>
+    </footer>
+	<script>
+        // Function to toggle the visibility of menu items
+        function toggleMenu() {
+            var menuItems = document.getElementById("menuItems");
+            if (menuItems.style.display === "block") {
+                menuItems.style.display = "none";
+            } else {
+                menuItems.style.display = "block";
+            }
+        }
+
+        // Function to toggle menu visibility based on screen size
+        function checkWindowSize() {
+            var menuItems = document.getElementById("menuItems");
+            var screenWidth = window.innerWidth;
+            if (screenWidth > 768) {
+                menuItems.style.display = "none";
+            }
+        }
+
+        checkWindowSize();
+        window.addEventListener("resize", checkWindowSize);
+    </script>
+</body>
+</html>
